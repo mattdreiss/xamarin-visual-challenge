@@ -30,7 +30,7 @@
                         FontAttributes="Bold" />
                     <FlexLayout>
                         <Image Source="run_icon.png" HeightRequest="20"/>
-                        <Label Text="December 30, 2020 at 12:00 PM" />
+                        <Label Text="May 21, 2019 at 5:08 PM" />
                     </FlexLayout>
                 </StackLayout>
             </StackLayout>
@@ -48,27 +48,27 @@
             <Grid ColumnDefinitions="*,*" RowDefinitions="Auto,Auto,Auto">
                 <StackLayout Grid.Row="0" Grid.Column="0" HorizontalOptions="Center">
                     <Label Text="Distance" HorizontalOptions="Center" FontSize="12"/>
-                    <Label Text="3.10 mi" HorizontalOptions="Center" FontSize="24" />
+                    <Label Text="2.73 mi" HorizontalOptions="Center" FontSize="24" />
                 </StackLayout>
                 <StackLayout Grid.Row="0" Grid.Column="1" HorizontalOptions="Center">
                     <Label Text="Avg Pace" HorizontalOptions="Center" FontSize="12"/>
-                    <Label Text="8:34 /mi" HorizontalOptions="Center" FontSize="24"/>
+                    <Label Text="9:52 /mi" HorizontalOptions="Center" FontSize="24"/>
                 </StackLayout>
                 <StackLayout Grid.Row="1" Grid.Column="0" HorizontalOptions="Center">
-                    <Label Text="Avg Pace" HorizontalOptions="Center" FontSize="12"/>
-                    <Label Text="8:34 /mi" HorizontalOptions="Center" FontSize="24"/>
+                    <Label Text="Moving Time" HorizontalOptions="Center" FontSize="12"/>
+                    <Label Text="26:57" HorizontalOptions="Center" FontSize="24"/>
                 </StackLayout>
                 <StackLayout Grid.Row="1" Grid.Column="1" HorizontalOptions="Center">
                     <Label Text="Elevation gain" HorizontalOptions="Center" FontSize="12"/>
-                    <Label Text="121 ft" HorizontalOptions="Center" FontSize="24"/>
+                    <Label Text="102 ft" HorizontalOptions="Center" FontSize="24"/>
                 </StackLayout>
                 <StackLayout Grid.Row="2" Grid.Column="0" HorizontalOptions="Center">
                     <Label Text="Calories" HorizontalOptions="Center" FontSize="12"/>
-                    <Label Text="388 Cal" HorizontalOptions="Center" FontSize="24"/>
+                    <Label Text="374 Cal" HorizontalOptions="Center" FontSize="24"/>
                 </StackLayout>
                 <StackLayout Grid.Row="2" Grid.Column="1" HorizontalOptions="Center">
                     <Label Text="Avg Heart Rate" HorizontalOptions="Center" FontSize="12"/>
-                    <Label Text="174 bpm" HorizontalOptions="Center" FontSize="24"/>
+                    <Label Text="172 bpm" HorizontalOptions="Center" FontSize="24"/>
                 </StackLayout>
             </Grid>
 
