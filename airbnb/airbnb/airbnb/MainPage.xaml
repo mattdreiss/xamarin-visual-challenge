@@ -1,0 +1,316 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:airbnb"
+             xmlns:iOsSpecific="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+             x:Class="airbnb.MainPage"
+             iOsSpecific:Page.UseSafeArea="true">
+
+    <StackLayout BackgroundColor="Black">
+        <!-- Covid banner -->
+        <Label
+            Padding="0, 16"
+            HorizontalTextAlignment="Center"
+            TextColor="White"
+            Text="Get the latest on our COVID-19 response" />
+
+        <!-- Main view -->
+        <Frame HasShadow="False" CornerRadius="16" Padding="0" IsClippedToBounds="True">
+            <ScrollView Orientation="Vertical">
+                <StackLayout Spacing="0">
+                    <!-- Go Near Banner -->
+                    <Grid RowDefinitions="Auto">
+                        <Image Grid.Row="0" Source="go_near.png" Aspect="AspectFill" />
+                        <StackLayout Grid.Row="0" Spacing="0">
+                            <Frame
+                                Margin="24,48"
+                                HasShadow="False"
+                                HeightRequest="48"
+                                Padding="0"
+                                CornerRadius="24">
+                                <Entry
+                                    PlaceholderColor="Black"
+                                    HorizontalTextAlignment="Center"
+                                    BackgroundColor="Transparent"
+                                    Placeholder="Where are you going?" />
+                            </Frame>
+                            <Label
+                                Margin="24,0"
+                                Padding="0"
+                                TextColor="White"
+                                FontAttributes="Bold"
+                                FontSize="72"
+                                LineHeight="0.8"
+                                Text="Go" />
+                            <Label
+
+                                Margin="24,0"
+                                Padding="0"
+                                TextColor="White"
+                                FontAttributes="Bold"
+                                FontSize="72"
+                                LineHeight="0.8"
+                                Text="Near" />
+                            <Button
+                                Margin="24,16"
+                                BackgroundColor="White"
+                                TextColor="Black"
+                                HorizontalOptions="Start"
+                                Padding="24,8"
+                                Text="Explore nearby stays" />
+                        </StackLayout>
+                    </Grid>
+
+                    <!-- Nearby location scroll area -->
+                    <ScrollView Orientation="Horizontal">
+                        <Grid
+                            RowDefinitions="Auto,Auto,Auto"
+                            ColumnDefinitions="*,*">
+                            <StackLayout Orientation="Horizontal"
+                                         Grid.Column="0"
+                                         Grid.Row="0">
+                                <Frame
+                                    HasShadow="False"
+                                    CornerRadius="8"
+                                    Padding="0"
+                                    Margin="0"
+                                    IsClippedToBounds="True">
+                                    <Image
+                                        VerticalOptions="Center"
+                                        HeightRequest="80"
+                                        WidthRequest="80"
+                                        Aspect="AspectFill"
+                                        Source="gatlinburg.png" />
+                                </Frame>
+                                <StackLayout VerticalOptions="CenterAndExpand">
+                                    <Label
+                                        FontAttributes="Bold"
+                                        Text="Galinburg" />
+                                    <Label
+                                        Text="5 hour drive" />
+                                </StackLayout>
+                            </StackLayout>
+
+                            <!-- Blue Ridge -->
+                            <StackLayout Orientation="Horizontal"
+                                         Grid.Column="0"
+                                         Grid.Row="1">
+                                <Frame
+                                    HasShadow="False"
+                                    CornerRadius="8"
+                                    Padding="0"
+                                    Margin="0"
+                                    IsClippedToBounds="True">
+                                    <Image
+                                        VerticalOptions="Center"
+                                        HeightRequest="80"
+                                        WidthRequest="80"
+                                        Aspect="AspectFill"
+                                        Source="blue_ridge.png" />
+                                </Frame>
+                                <StackLayout VerticalOptions="CenterAndExpand">
+                                    <Label
+                                        FontAttributes="Bold"
+                                        Text="Blue Ridge" />
+                                    <Label
+                                        Text="4.5 hour drive" />
+                                </StackLayout>
+                            </StackLayout>
+
+                            <!-- Nashville -->
+                            <StackLayout Orientation="Horizontal"
+                                         Grid.Column="1"
+                                         Grid.Row="0">
+                                <Frame
+                                    HasShadow="False"
+                                    CornerRadius="8"
+                                    Padding="0"
+                                    Margin="0"
+                                    IsClippedToBounds="True">
+                                    <Image
+                                        VerticalOptions="Center"
+                                        HeightRequest="80"
+                                        WidthRequest="80"
+                                        Aspect="AspectFill"
+                                        Source="nashville.png" />
+                                </Frame>
+                                <StackLayout VerticalOptions="CenterAndExpand">
+                                    <Label
+                                        FontAttributes="Bold"
+                                        Text="Nashville" />
+                                    <Label
+                                        Text="30 minute drive" />
+                                </StackLayout>
+                            </StackLayout>
+
+                            <!-- Asheville -->
+                            <StackLayout Orientation="Horizontal"
+                                         Grid.Column="1"
+                                         Grid.Row="1">
+                                <Frame
+                                    HasShadow="False"
+                                    CornerRadius="8"
+                                    Padding="0"
+                                    Margin="0"
+                                    IsClippedToBounds="True">
+                                    <Image
+                                        VerticalOptions="Center"
+                                        HeightRequest="80"
+                                        WidthRequest="80"
+                                        Aspect="AspectFill"
+                                        Source="asheville.png" />
+                                </Frame>
+                                <StackLayout VerticalOptions="CenterAndExpand">
+                                    <Label
+                                        FontAttributes="Bold"
+                                        Text="Asheville" />
+                                    <Label
+                                        Text="6.5 hour drive" />
+                                </StackLayout>
+                            </StackLayout>
+
+                            <!-- Nashville -->
+                            <StackLayout Orientation="Horizontal"
+                                         Grid.Column="2"
+                                         Grid.Row="0">
+                                <Frame
+                                    HasShadow="False"
+                                    CornerRadius="8"
+                                    Padding="0"
+                                    Margin="0"
+                                    IsClippedToBounds="True">
+                                    <Image
+                                        VerticalOptions="Center"
+                                        HeightRequest="80"
+                                        WidthRequest="80"
+                                        Aspect="AspectFill"
+                                        Source="chattanooga.png" />
+                                </Frame>
+                                <StackLayout VerticalOptions="CenterAndExpand">
+                                    <Label
+                                        FontAttributes="Bold"
+                                        Text="Chattanooga" />
+                                    <Label
+                                        Text="3 hour drive" />
+                                </StackLayout>
+                            </StackLayout>
+
+                            <!-- Sevierville -->
+                            <StackLayout Orientation="Horizontal"
+                                         Grid.Column="2"
+                                         Grid.Row="1">
+                                <Frame
+                                    HasShadow="False"
+                                    CornerRadius="8"
+                                    Padding="0"
+                                    Margin="0"
+                                    IsClippedToBounds="True">
+                                    <Image
+                                        VerticalOptions="Center"
+                                        HeightRequest="80"
+                                        WidthRequest="80"
+                                        Aspect="AspectFill"
+                                        Source="sevierville.png" />
+                                </Frame>
+                                <StackLayout VerticalOptions="CenterAndExpand">
+                                    <Label
+                                        FontAttributes="Bold"
+                                        Text="Sevierville" />
+                                    <Label
+                                        Text="4.5 hour drive" />
+                                </StackLayout>
+                            </StackLayout>
+                        </Grid>
+                    </ScrollView>
+
+                    <!-- live anywhere section -->
+                    <Label
+                        FontSize="24"
+                        FontAttributes="Bold"
+                        Text="Live anywhere"/>
+
+                    <ScrollView Orientation="Horizontal">
+                        <StackLayout Orientation="Horizontal">
+
+                            <!-- Entire homes -->
+                            <StackLayout>
+                                <Frame
+                                    HasShadow="False"
+                                    CornerRadius="8"
+                                    Padding="0"
+                                    Margin="0"
+                                    IsClippedToBounds="True">
+                                    <Image
+                                        VerticalOptions="Center"
+                                        HeightRequest="300"
+                                        WidthRequest="300"
+                                        Aspect="AspectFill"
+                                        Source="entire_homes.png" />
+                                </Frame>
+                                <Label Text="Entire homes"/>
+                            </StackLayout>
+
+                            <!-- Cabins and cottages -->
+                            <StackLayout>
+                                <Frame
+                                    HasShadow="False"
+                                    CornerRadius="8"
+                                    Padding="0"
+                                    Margin="0"
+                                    IsClippedToBounds="True">
+                                    <Image
+                                        VerticalOptions="Center"
+                                        HeightRequest="300"
+                                        WidthRequest="300"
+                                        Aspect="AspectFill"
+                                        Source="cabins_cottages.png" />
+                                </Frame>
+                                <Label Text="Cabins and cottages"/>
+                            </StackLayout>
+
+                            <!-- unique stays -->
+                            <StackLayout>
+                                <Frame
+                                    HasShadow="False"
+                                    CornerRadius="8"
+                                    Padding="0"
+                                    Margin="0"
+                                    IsClippedToBounds="True">
+                                    <Image
+                                        VerticalOptions="Center"
+                                        HeightRequest="300"
+                                        WidthRequest="300"
+                                        Aspect="AspectFill"
+                                        Source="unique_stays.png" />
+                                </Frame>
+                                <Label Text="Unique stays"/>
+                            </StackLayout>
+
+                            <!-- pets welcome -->
+                            <StackLayout>
+                                <Frame
+                                    HasShadow="False"
+                                    CornerRadius="8"
+                                    Padding="0"
+                                    Margin="0"
+                                    IsClippedToBounds="True">
+                                    <Image
+                                        VerticalOptions="Center"
+                                        HeightRequest="300"
+                                        WidthRequest="300"
+                                        Aspect="AspectFill"
+                                        Source="pets_welcome.png" />
+                                </Frame>
+                                <Label Text="Pets welcome"/>
+                            </StackLayout>
+
+                        </StackLayout>
+                    </ScrollView>
+
+                </StackLayout>
+            </ScrollView>
+        </Frame>
+    </StackLayout>
+
+</ContentPage>
